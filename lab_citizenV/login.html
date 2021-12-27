@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Đăng Nhập CitizenV</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style_login.css">
+  <link rel="stylesheet" href="./assets/css/fontAwesome.css">
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1 class="text-light"><a href="./home.html"><span>CitizenV</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="./home.html">Trang Chủ</a></li>
+          <li><a class="nav-link scrollto" href="./home.html">Thông Tin</a></li>
+          <li><a class="nav-link scrollto" href="./home.html">Dịch Vụ</a></li>
+          <li><a class="nav-link scrollto" href="./home.html">Liên Hệ</a></li>
+        </ul>
+        <!-- <li class="link_login"><a id="loginClick" href="./login.html">Đăng Nhập<i class="fas fa-sign-in-alt"></i></a></li> -->
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  <main  style="margin: 156px 24px 86px 24px;" id="main">
+    <div class="left_section">
+      <img src="./assets/img/undraw_visual_data_re_mxxo.svg" alt="">
+  </div>
+  <div class="right_section">
+      <h2>Welcome to CitizenV</h2>
+      <div class="username">
+          <div class="icon">
+              <i class="fas fa-user"></i>
+          </div>
+          <input type="text" id="username" placeholder="Username">
+          <span class="usNameErr" style="color: red; display: block; min-width: 300px;"></span>
+      </div>
+      <div class="password">
+          <div class="icon">
+              <i class="fas fa-lock"></i>
+          </div>
+          <input type="password" id="password" placeholder="Password">
+          <div class="icon">
+              <i class="fas fa-eye" id="show_or_hidden"></i>
+          </div>
+          <span class="passErr" style="color: red; display: block; min-width: 300px;"></span>
+      </div>
+      <span class="userErr" style="color: red;"></span>
+      <button class="my_btn" id="login_btn">Login</button>
+  </div>
+  </main><!-- End #main -->
+
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>CITIZENV</h3>
+              <p class="pb-3"><em>TRANG WEB THỐNG KÊ DÂN SỐ VÀ BÁO CÁO DÂN SỐ VIỆT NAM</em></p>
+              <p>
+                144 Xuân Thủy , Cầu Giấy <br>
+                Hà Nội, Việt Nam<br><br>
+                <strong>Phone:</strong> 024.37547.461<br>
+                <strong>Email:</strong> uet@vnu.edu.vn<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Lựa Chọn</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#hero">Trang Chủ</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">Thông Tin</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Dịch Vụ</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#contact">Liên Hệ</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Dịch Vụ</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Khai Báo Thông Tin</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Xem Thông Tin Người Dân</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Thống Kê Dân Số Logic</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#services">Kết Nối Dễ Dàng</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Điều Nhắn Gửi Đến Chúng Tôi</h4>
+            <p>Hãy Nhẵn Nhũ Những Điều Tích Cực Để Chúng Tôi Cải Thiện</p>
+            <form action="" method="post">
+              <input type="email" name="email"><input type="submit" value="Nhắn Gửi">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>CitizenV</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="./assets/js/login/form_login.js"></script>
+  <!-- <script src="./assets/js/login/validate_login.js"></script> -->
+</body>
+
+</html>

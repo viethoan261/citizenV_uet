@@ -1,0 +1,180 @@
+/* start global styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::placeholder {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+}
+
+button {
+    background: transparent;
+    border: none;
+}
+
+input {
+    outline: none;
+    border: none;
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+}
+
+
+/* end global styles */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap'); */
+/* .top {
+    background-image: linear-gradient(#635cff, white);
+    height: 50vh;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+} */
+
+#main {
+    background-image: linear-gradient(#67b0d1, white);
+    height: 500px;
+    box-shadow: 0 0 25px 0 black;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width:768px) {
+    #main {
+        grid-template-columns: 1fr;
+    }
+    #main .left_section {
+        display: none!important;
+    }
+}
+
+#main .left_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main .left_section img {
+    width: 350px;
+    max-width: 100%;
+}
+
+#main .right_section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 50px;
+}
+
+@media (max-width:768px) {
+    #main .right_section {
+        padding: 10px;
+    }
+}
+
+#main .right_section img {
+    width: 120px;
+    max-width: 100%;
+}
+
+#main .right_section h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+}
+#main .right_section .username {
+    background-color: #eee;
+    width: 100%;
+    padding: 10px 10px;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    border-radius: 7px;
+    align-items: baseline;
+    grid-column-gap: 5px;
+}
+
+#main .right_section .password,
+#main .right_section .repassword{
+    background-color: #eee;
+    width: 100%;
+    padding: 10px 10px;
+    display: grid;
+    grid-template-columns: 7% 84% 7%;
+    border-radius: 7px;
+    align-items: baseline;
+    grid-column-gap: 5px;
+}
+
+
+#main .right_section .username i,
+#main .right_section .password i,
+#main .right_section .repassword i
+{
+    font-size: 22px;
+    max-width: 100%;
+}
+@media (max-width:576px) {
+    #main .right_section .username i,
+    #main .right_section .password i,
+    #main .right_section .repassword i
+ {
+        font-size: 16px;
+        max-width: 100%;
+    }
+   
+     ::placeholder {
+        font-size: 16px;
+    }
+    #main .right_section .password,
+    #main .right_section .repassword
+   {
+        grid-template-columns: 7% 80% 10%;
+    }
+    
+}
+
+@media (max-width:370px) {
+    #main .right_section .username,
+    #main .right_section .password,
+    #main .right_section .repassword
+     {
+        width: 200px!important;
+    }
+    
+}
+
+#main .right_section .password #show_or_hidden,
+#main .right_section .repassword #show_or_hidden_repaswd
+{
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+#main .right_section .my_btn {
+    padding: 10px 5px;
+    border-radius: 50px;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    width: 80%;
+    font-size: 18px;
+    background-color: #0099FF;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+#main .right_section .my_btn:hover {
+    box-shadow: 0 0 20px 0 #444343;
+}
